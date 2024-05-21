@@ -18,7 +18,9 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 90%; 
+    max-width: 90%; /* Максимальная ширина 90% от экрана */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .button-container {
@@ -51,7 +53,7 @@ body {
         padding: 15px 0;
         font-size: 1.2em;
     }
-    
+
     .container {
         padding: 20px;
     }
