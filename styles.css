@@ -31,30 +31,31 @@ body {
 }
 
 .rectangle-button {
-    display: inline-block;
-    width: 400px;
-    padding: 40px 0;
-    background-color: #8e44ad; 
+    display: block;  /* Установлено значение block для кнопок */
+    width: 100%;     /* Ширина кнопки равна 100% ширины родителя */
+    max-width: 400px;/* Максимальная ширина кнопки */
+    padding: 20px 0; /* Отступы внутри кнопок */
+    background-color: #8e44ad; /* Фиолетовый цвет */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 40px;
+    font-size: 1.5em; /* Размер текста */
     transition: background-color 0.3s;
     text-align: center;
+    box-sizing: border-box; /* Учет отступов и границ в ширине */
 }
 
 .rectangle-button:hover {
-    background-color: #732d91; 
+    background-color: #732d91; /* Более темный фиолетовый при наведении */
 }
-
 
 @media (max-width: 600px) {
     .rectangle-button {
-        padding: 15px 0;
-        font-size: 1.2em;
+        padding: 15px 0; /* Уменьшение отступов на мобильных устройствах */
+        font-size: 1.2em; /* Уменьшение размера текста на мобильных устройствах */
     }
-
+    
     .container {
-        padding: 20px;
+        padding: 20px; /* Уменьшение отступов контейнера на мобильных устройствах */
     }
 }
