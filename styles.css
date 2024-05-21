@@ -28,22 +28,15 @@ body {
 }
 
 .rectangle-button {
-    display: inline-block;
-    width: 100%; /* Используйте 100% ширины родителя */
-    max-width: 400px; /* Ограничьте максимальную ширину */
-    padding: 20px 0;
-    background-color: #8e44ad;
+    background-color: #8e44ad; /* Фиолетовый цвет */
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.5em; /* Используйте em для масштабирования текста */
     transition: background-color 0.3s;
-    text-align: center;
 }
 
 .rectangle-button:hover {
-    background-color: #732d91;
+    background-color: #732d91; /* Более темный фиолетовый при наведении */
 }
+
 
 @media (max-width: 600px) {
     .rectangle-button {
